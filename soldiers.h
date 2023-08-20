@@ -15,6 +15,9 @@ public:
     virtual void Set_Soldier_Name() = 0;
     virtual void Set_Soldier_Special_Ability() = 0;
     virtual void Set_Soldier_Damage_Value() = 0;
+    virtual void get_Soldier_Name() = 0;
+    virtual void get_soldier_Special_Ability() = 0;
+    virtual void get_soldier_Damage_Value() = 0;
 };
 
 
