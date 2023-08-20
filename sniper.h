@@ -1,12 +1,12 @@
-#ifndef _COMMANDO_H_
-#define _COMMANDO_H_
+#ifndef _SNIPER_H_
+#define _SNIPER_H_
 
 #include "soldiers.h"
 
-class Commando : protected Soldier
+class Sniper : protected Soldier
 {
 public:
-    Commando();
+    Sniper();
     void Set_Soldier_Name();
     void Set_Soldier_Special_Ability();
     void Set_Soldier_Damage_Value();

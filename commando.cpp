@@ -21,3 +21,18 @@ void Commando :: Set_Soldier_Damage_Value()
 {
     Soldier_Damage_Value = 85;        
 }
+
+void Commando :: get_Soldier_Name()
+{
+    return Soldier_Name;
+}
+
+void Commando :: get_soldier_Special_Ability()
+{
+    return Soldier_Special_Ability;
+}
+
+void Commando :: get_soldier_Damage_Value()
+{
+    return Soldier_Damage_Value;
+}
