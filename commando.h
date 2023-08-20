@@ -10,3 +10,4 @@ class Commando : protected Soldier
     void Set_Soldier_Damage_Value();
 };
 
+#endif
