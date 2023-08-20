@@ -5,7 +5,11 @@
 
 class Commando : protected Soldier
 {
+public:
     Commando();
+    void Set_Soldier_Name();
+    void Set_Soldier_Special_Ability();
+    void Set_Soldier_Damage_Value();
 };
 
 #endif
