@@ -1,3 +1,5 @@
+#include "commando.h"
+
 Commando(){
     void Commando :: Set_Soldier_Name(){
         cout << "Commando's Name: ";
