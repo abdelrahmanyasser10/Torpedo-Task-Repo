@@ -10,9 +10,9 @@ public:
     void Set_Soldier_Name();
     void Set_Soldier_Special_Ability();
     void Set_Soldier_Damage_Value();
-    void get_Soldier_Name();
-    void get_soldier_Special_Ability();
-    void get_soldier_Damage_Value();
+    string get_Soldier_Name();
+    string get_soldier_Special_Ability();
+    float get_soldier_Damage_Value();
 };
 
 #endif

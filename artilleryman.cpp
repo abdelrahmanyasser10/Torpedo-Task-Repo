@@ -22,17 +22,17 @@ void Artillertman :: Set_Soldier_Damage_Value()
 {
     Soldier_Damage_Value = 80;        
 }
-void Artillertman :: get_Soldier_Name()
+string Artillertman :: get_Soldier_Name()
 {
     return Soldier_Name;
 }
 
-void Artillertman :: get_soldier_Special_Ability()
+string Artillertman :: get_soldier_Special_Ability()
 {
     return Soldier_Special_Ability;
 }
 
-void Artillertman :: get_soldier_Damage_Value()
+float Artillertman :: get_soldier_Damage_Value()
 {
     return Soldier_Damage_Value;
 }

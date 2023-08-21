@@ -22,17 +22,17 @@ void Sniper :: Set_Soldier_Damage_Value()
 {
     Soldier_Damage_Value = 90;        
 }
-void Sniper :: get_Soldier_Name()
+string Sniper :: get_Soldier_Name()
 {
     return Soldier_Name;
 }
 
-void Sniper :: get_soldier_Special_Ability()
+string Sniper :: get_soldier_Special_Ability()
 {
     return Soldier_Special_Ability;
 }
 
-void Sniper :: get_soldier_Damage_Value()
+float Sniper :: get_soldier_Damage_Value()
 {
     return Soldier_Damage_Value;
 }
