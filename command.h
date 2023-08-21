@@ -4,7 +4,8 @@
 
 #include<iostream>
 #include<string>
-
+#include "vehicles.h"
+#include "soliders.h"
 
 using namespace std;
 
