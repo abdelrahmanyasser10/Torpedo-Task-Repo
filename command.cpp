@@ -18,4 +18,4 @@ void commands_vehicle::moveVehicles(){
 cout<<"the vehicle"<< vehicle_name<<"is moving";
 }
 void commands_vehicle ::report(){
-    cout<< "the vehicle"<<vehicle_name<<"with the function"<<vehicle_function;
+    cout<< "the vehicle"<<vehicle_name<<"with the function"<<vehicle_function;}
