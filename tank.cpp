@@ -12,7 +12,7 @@ tank::tank()
 
 void tank :: Set_vehicle_function()
 {
-    vehicle_function = "function of tank vehicle: make the weapons mounted in them more effective by their cross-country mobility and by the protection they provide for their crews.";
+    vehicle_function = "to close with and destroy the enemy using fire, maneuver and shock effect";
 
 }
 

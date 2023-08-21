@@ -11,7 +11,7 @@ helicopter ::helicopter()
 
 void helicopter:: Set_vehicle_function()
 {
-    vehicle_function = "function of tank vehicle: make the weapons mounted in them more effective by their cross-country mobility and by the protection they provide for their crews.";
+    vehicle_function = "transport of troops";
 
 }
 
