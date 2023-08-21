@@ -19,10 +19,12 @@ public:
 
 
 };
+
 class commands_vehicle : protected vehicles{
-     public:
-void fireVehicles();
+public:
+     void fireVehicles();
      void moveVehicles();
       void report();
 };
+
 #endif  _COMMANDS_H_
