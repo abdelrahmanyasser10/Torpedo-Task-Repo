@@ -8,6 +8,8 @@ class enemyarmy {
 public:
     void attack();
     void defend();
+    bool isAttack();
+    bool isDefend();
 
 };
 #endif _ENEMYARMY_H_
