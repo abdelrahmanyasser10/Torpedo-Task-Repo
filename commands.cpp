@@ -1,29 +1,29 @@
 #include "commands.h"
-commands_soliders ::commands_soliders()
+commands_soldiers ::commands_soldiers()
 {
 }
-void commands_soliders ::attackSoliders()
+void commands_soldiers ::attackSoldiers()
 {
-    cout << "the solider" << Soldier_Name << "attack the enemy";
+    cout << "the soldiers attacking the enemy";
 }
-void commands_soliders ::defendSoliders()
+void commands_soldiers ::defendSoldiers()
 {
-    cout << "the solider" << Soldier_Name << "defends the army";
+    cout << "the soldiers defending the army";
 }
 
-void commands_soliders ::report()
-{
-    cout << "the solider" << Soldier_Name << "has" << Soldier_Special_Ability << "with damage value" << Soldier_Damage_Value;
-}
+// void commands_soldiers ::report()
+// {
+//     cout << "the soldier" << Soldier_Name << "has" << Soldier_Special_Ability << "with damage value" << Soldier_Damage_Value;
+// }
 void commands_vehicle::fireVehicles()
 {
-    cout << "the vehicle" << vehicle_name << "fire the enemy";
+    cout << "the vehicles fire at the enemy";
 }
 void commands_vehicle::moveVehicles()
 {
-    cout << "the vehicle" << vehicle_name << "is moving";
+    cout << "the vehicles are moving towards the target";
 }
-void commands_vehicle ::report()
-{
-    cout << "the vehicle" << vehicle_name << "with the function" << vehicle_function;
-}
+// void commands_vehicle ::report()
+// {
+//     cout << "the vehicle" << vehicle_name << "with the function" << vehicle_function;
+// }

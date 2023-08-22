@@ -69,14 +69,14 @@ void Army ::Add_Soldiers()
     cout << "Commandos" << endl
          << endl;
     cout << "number of Commandos in the Group: ";
-    cin >> number_of_soldier_in_a_group;
-    Commando commando[number_of_soldier_in_a_group];
+    cin >> number_of_commandos_in_a_group;
+    commando.resize(number_of_commandos_in_a_group);
     cout << endl
          << endl;
-    commando->Description();
+    commando[0].Description();
     cout << endl
          << endl;
-    for (size_t i = 0; i < number_of_soldier_in_a_group; i++)
+    for (size_t i = 0; i < number_of_commandos_in_a_group; i++)
     {
         commando[i].Set_Soldier_Name();
         commando[i].Set_Soldier_Special_Ability();
@@ -90,14 +90,14 @@ void Army ::Add_Soldiers()
     cout << "Snipers" << endl
          << endl;
     cout << "number of Snipers in the Group: ";
-    cin >> number_of_soldier_in_a_group;
-    Sniper sniper[number_of_soldier_in_a_group];
+    cin >> number_of_snipers_in_a_group;
+    sniper.resize(number_of_snipers_in_a_group);
     cout << endl
          << endl;
-    sniper->Description();
+    sniper[0].Description();
     cout << endl
          << endl;
-    for (size_t i = 0; i < number_of_soldier_in_a_group; i++)
+    for (size_t i = 0; i < number_of_snipers_in_a_group; i++)
     {
         sniper[i].Set_Soldier_Name();
         sniper[i].Set_Soldier_Special_Ability();
@@ -111,14 +111,14 @@ void Army ::Add_Soldiers()
     cout << "Engineers" << endl
          << endl;
     cout << "number of Engineers in the Group: ";
-    cin >> number_of_soldier_in_a_group;
-    Engineer engineer[number_of_soldier_in_a_group];
+    cin >> number_of_engineers_in_a_group;
+    engineer.resize(number_of_engineers_in_a_group);
     cout << endl
          << endl;
-    engineer->Description();
+    engineer[0].Description();
     cout << endl
          << endl;
-    for (size_t i = 0; i < number_of_soldier_in_a_group; i++)
+    for (size_t i = 0; i < number_of_engineers_in_a_group; i++)
     {
         engineer[i].Set_Soldier_Name();
         engineer[i].Set_Soldier_Special_Ability();
@@ -132,14 +132,14 @@ void Army ::Add_Soldiers()
     cout << "Infantrymen" << endl
          << endl;
     cout << "number of Infantrymen in the Group: ";
-    cin >> number_of_soldier_in_a_group;
-    Infantryman infantryman[number_of_soldier_in_a_group];
+    cin >> number_of_infantrymen_in_a_group;
+    infantryman.resize(number_of_infantrymen_in_a_group);
     cout << endl
          << endl;
-    infantryman->Description();
+    infantryman[0].Description();
     cout << endl
          << endl;
-    for (size_t i = 0; i < number_of_soldier_in_a_group; i++)
+    for (size_t i = 0; i < number_of_infantrymen_in_a_group; i++)
     {
         infantryman[i].Set_Soldier_Name();
         infantryman[i].Set_Soldier_Special_Ability();
@@ -153,14 +153,14 @@ void Army ::Add_Soldiers()
     cout << "Artillerymen" << endl
          << endl;
     cout << "number of Artillerymen in the Group: ";
-    cin >> number_of_soldier_in_a_group;
-    Artilleryman artilleryman[number_of_soldier_in_a_group];
+    cin >> number_of_artillerymen_in_a_group;
+    artilleryman.resize(number_of_artillerymen_in_a_group);
     cout << endl
          << endl;
-    artilleryman->Description();
+    artilleryman[0].Description();
     cout << endl
          << endl;
-    for (size_t i = 0; i < number_of_soldier_in_a_group; i++)
+    for (size_t i = 0; i < number_of_artillerymen_in_a_group; i++)
     {
         artilleryman[i].Set_Soldier_Name();
         artilleryman[i].Set_Soldier_Special_Ability();
@@ -174,14 +174,14 @@ void Army ::Add_Soldiers()
     cout << "Tankers" << endl
          << endl;
     cout << "number of Tankers in the Group: ";
-    cin >> number_of_soldier_in_a_group;
-    Tanker tanker[number_of_soldier_in_a_group];
+    cin >> number_of_tankers_in_a_group;
+    tanker.resize(number_of_tankers_in_a_group);
     cout << endl
          << endl;
-    tanker->Description();
+    tanker[0].Description();
     cout << endl
          << endl;
-    for (size_t i = 0; i < number_of_soldier_in_a_group; i++)
+    for (size_t i = 0; i < number_of_tankers_in_a_group; i++)
     {
         tanker[i].Set_Soldier_Name();
 
@@ -195,14 +195,65 @@ void Army ::Add_Soldiers()
 
 void Army ::Add_Vehicles()
 {
+    cout << "Now General, We're going to add Vehclies to Our Arrmy" << endl
+         << "----------------------------------------------------" << endl
+         << "----------------------------------------------------" << endl;
+    cout << endl
+         << endl;
+
+    // Tank section
+    cout << "Tanks" << endl
+         << endl;
+    cout << "number of Tanks in the Group: ";
+    cin >> number_of_tanks;
+    Tank.resize(number_of_tanks);
+    cout << endl
+         << endl;
+
+    for (size_t i = 0; i < number_of_tanks; i++)
+    {
+        Tank[i].Set_vehicle_name();
+        Tank[i].Set_vehicle_function();
+    }
+    cout << endl
+         << endl;
+    /*------------------------------------------------------------------------*/
+
+    // Helicopter section
+    cout << "Helicopters" << endl
+         << endl;
+    cout << "number of Helicopters in the Group: ";
+    cin >> number_of_helicopters;
+    Helicopter.resize(number_of_helicopters);
+    cout << endl
+         << endl;
+
+    for (size_t i = 0; i < number_of_helicopters; i++)
+    {
+        Helicopter[i].Set_vehicle_name();
+        Helicopter[i].Set_vehicle_function();
+    }
+    cout << endl
+         << endl;
+    /*------------------------------------------------------------------------*/
 }
 
 void Army ::Attack()
 {
+    cout << endl
+         << endl;
+    Commands_Soldiers.attackSoldiers();
+    cout << endl
+         << endl;
 }
 
 void Army ::Defend()
 {
+    cout << endl
+         << endl;
+    Commands_Soldiers.defendSoldiers();
+    cout << endl
+         << endl;
 }
 
 void Army ::Soldier_Report()
@@ -211,10 +262,20 @@ void Army ::Soldier_Report()
 
 void Army ::Vehclies_Move()
 {
+    cout << endl
+         << endl;
+    Command_Vehicles.moveVehicles();
+    cout << endl
+         << endl;
 }
 
 void Army ::Vehclies_Shoot()
 {
+    cout << endl
+         << endl;
+    Command_Vehicles.fireVehicles();
+    cout << endl
+         << endl;
 }
 
 void Army ::Vehclies_Report()

@@ -3,10 +3,6 @@
 
 tank::tank()
 {
-    Set_vehicle_function();
-    Set_vehicle_name();
-    get_vehicle_name();
-    get_vehicle_function();
 }
 
 void tank ::Set_vehicle_function()

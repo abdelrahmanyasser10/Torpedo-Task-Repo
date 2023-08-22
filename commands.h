@@ -8,17 +8,17 @@
 
 using namespace std;
 
-class commands_soliders : protected Soldier
+class commands_soldiers
 {
 
 public:
-     commands_soliders();
-     void attackSoliders();
-     void defendSoliders();
+     commands_soldiers();
+     void attackSoldiers();
+     void defendSoldiers();
      void report();
 };
 
-class commands_vehicle : protected vehicles
+class commands_vehicle
 {
 public:
      void fireVehicles();

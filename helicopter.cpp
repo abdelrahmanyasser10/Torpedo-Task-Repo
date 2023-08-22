@@ -3,10 +3,6 @@
 
 helicopter ::helicopter()
 {
-    Set_vehicle_function();
-    Set_vehicle_name();
-    get_vehicle_name();
-    get_vehicle_function();
 }
 
 void helicopter::Set_vehicle_function()
