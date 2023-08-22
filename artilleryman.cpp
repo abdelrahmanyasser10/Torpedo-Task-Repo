@@ -1,38 +1,44 @@
 #include "artilleryman.h"
 
-Artillertman :: Artillertman()
+Artilleryman ::Artilleryman()
 {
-    Set_Soldier_Name();
-    Set_Soldier_Special_Ability();
-    Set_Soldier_Damage_Value();
 }
 
-void Artillertman :: Set_Soldier_Name()
+void Artilleryman ::Description()
+{
+    cout << "Description" << endl
+         << "An artilleryman is a soldier enlisted in an artillery unit or who uses artillery." << endl
+         << " Artillery is a class of heavy military ranged weapons that launch munitions far beyond the range and power of infantry firearms." << endl
+         << "Artillerymen operate these weapons, which can include guns, howitzers, and mortars, as well as rocket artillery." << endl
+         << "----------------------------------------------------" << endl;
+}
+
+void Artilleryman ::Set_Soldier_Name()
 {
     cout << "Artilleryman's Name: ";
     cin >> Soldier_Name;
 }
 
-void Artillertman :: Set_Soldier_Special_Ability()
+void Artilleryman ::Set_Soldier_Special_Ability()
 {
     Soldier_Special_Ability = " operate heavy weapons that can deliver devastating firepower over long distances";
 }
-    
-void Artillertman :: Set_Soldier_Damage_Value()
+
+void Artilleryman ::Set_Soldier_Damage_Value()
 {
-    Soldier_Damage_Value = 80;        
+    Soldier_Damage_Value = 80;
 }
-string Artillertman :: get_Soldier_Name()
+string Artilleryman ::get_Soldier_Name()
 {
     return Soldier_Name;
 }
 
-string Artillertman :: get_soldier_Special_Ability()
+string Artilleryman ::get_soldier_Special_Ability()
 {
     return Soldier_Special_Ability;
 }
 
-float Artillertman :: get_soldier_Damage_Value()
+float Artilleryman ::get_soldier_Damage_Value()
 {
     return Soldier_Damage_Value;
 }

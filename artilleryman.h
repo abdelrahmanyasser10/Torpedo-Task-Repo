@@ -3,13 +3,14 @@
 
 #include "soldiers.h"
 
-class Artillertman : protected Soldier
+class Artilleryman : protected Soldier
 {
 public:
-    Artillertman();
+    Artilleryman();
     void Set_Soldier_Name();
     void Set_Soldier_Special_Ability();
     void Set_Soldier_Damage_Value();
+    void Description();
     string get_Soldier_Name();
     string get_soldier_Special_Ability();
     float get_soldier_Damage_Value();
