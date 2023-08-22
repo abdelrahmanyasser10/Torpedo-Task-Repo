@@ -8,7 +8,7 @@ void Artilleryman ::Description()
 {
     cout << "Description" << endl
          << "An artilleryman is a soldier enlisted in an artillery unit or who uses artillery." << endl
-         << " Artillery is a class of heavy military ranged weapons that launch munitions far beyond the range and power of infantry firearms." << endl
+         << "Artillery is a class of heavy military ranged weapons that launch munitions far beyond the range and power of infantry firearms." << endl
          << "Artillerymen operate these weapons, which can include guns, howitzers, and mortars, as well as rocket artillery." << endl
          << "----------------------------------------------------" << endl;
 }
@@ -21,7 +21,7 @@ void Artilleryman ::Set_Soldier_Name()
 
 void Artilleryman ::Set_Soldier_Special_Ability()
 {
-    Soldier_Special_Ability = " operate heavy weapons that can deliver devastating firepower over long distances";
+    Soldier_Special_Ability = "operate heavy weapons that can deliver devastating firepower over long distances";
 }
 
 void Artilleryman ::Set_Soldier_Damage_Value()
